@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/help"
+  get "home", to: "static_pages#home", as: "home"
+  get "help", to: "static_pages#help", as: "help"
+  get "about", to: "static_pages#about", as: "about"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
